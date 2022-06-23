@@ -1,0 +1,163 @@
+html, body, #root{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #e6e6e6;
+}
+.App {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.App-Showswrapper-window {
+    position: relative;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.back-to-home-button-wrapper {
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App-back-to-home-button {
+    position: absolute;
+    left: 10%;
+}
+
+.searchResults-text {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.1em;
+}
+.Header{
+    position: relative;
+    min-height: 4em;
+    height: 10%;
+    width: 100%;
+    background-color: #ffe6c6;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header-search-bar{
+    position: relative;
+    width: calc(10em + 30%);
+    min-width: 12em;
+    height: calc(2em + 10%);
+    background-color: #fff;
+    border-radius: 8em;
+}
+
+.Header-search-bar-input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none ;
+    border-radius: 8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: #ff9f21;
+}
+.Header-search-bar-input:focus{
+    border: 0.13em solid #ff9f21;
+}
+
+.Header-search-bar-input::placeholder{
+    text-align: center;
+}
+.Showswrapper {
+    position: relative;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    justify-content: space-around;
+    height: auto;
+    grid-template-rows: repeat(4, 270px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+}
+.Show {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0.5em;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    transition: transform 0.2s linear;
+}
+.Show:hover{
+    transform: scale(1.1);
+}
+
+.Show-thumbnail {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f2f; */
+    cursor: pointer;
+}
+.Show-thumbnail .thumbnail-img:active{
+    transform: scale(0.95);
+}
+
+.Show .Show-title {
+    position: relative;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    max-width: 84%;
+    width: auto;
+    height: fit-content;
+    overflow: hidden;
+    text-align: left;
+    color: rgb(17, 17, 17);
+}
+
+.Show .Show-description {
+    position: relative;
+    font-size: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-weight: 500;
+    width: 80%;
+    color: rgb(228, 228, 228);
+}
